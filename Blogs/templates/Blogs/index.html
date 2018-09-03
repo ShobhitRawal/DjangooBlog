@@ -59,7 +59,7 @@
 			</form>
 		</div>
 		<div id="signup">   
-			<form action="#" method="post">
+			<form method="POST">{% csrf_token %}
 				
 				<p class="header">User Name</p>
 				<input type="text" name="user" placeholder="Your Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Full Name';}" required="required">
